@@ -1,0 +1,35 @@
+section {
+  margin: 10vh 20vh;
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(200px);
+}
+
+section h1 {
+  font-size: 50px;
+  margin-bottom: 5vh;
+  transition: 0.3s 0.5s; 
+  /* 0.5s : 진행시간 0.5s: 딜레이 */
+  opacity: 0;
+}
+
+section.active h1 {
+  opacity: 1;
+}
+
+section p {
+  transition: 0.5s 1s; 
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+section.active p {
+  color: #555;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section.active{
+  opacity: 1;
+  transform: translateY(0);
+}
